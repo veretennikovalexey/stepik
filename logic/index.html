@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица a ||= b</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="table-container">
+
+  <h4>Логический оператор присваивания ИЛИ</h4>  
+
+        <table>
+            <thead>
+                <tr>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>a ||= b</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>false</td>
+                    <td>4</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>null</td>
+                    <td>true</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>undefined</td>
+                    <td>'hello'</td>
+                    <td>'hello'</td>
+                </tr>
+                <tr>
+                    <td>''</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>null</td>
+                    <td>false</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>undefined</td>
+                    <td>null</td>
+                    <td>null</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>'world'</td>
+                    <td>'world'</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
