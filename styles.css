@@ -1,4 +1,7 @@
-/* styles.css */
 code {
-  font-size: 18px; /* Увеличиваем шрифт */
+  font-size: 18px;
 }
+pre {
+  font-size: 18px;
+}
+
