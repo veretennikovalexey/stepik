@@ -1,8 +1,13 @@
 "use strict";
-const price = 6.4;
-const quantity = 3;
-const sum = price * quantity;
-console.log(sum);
+
+const timeoutId = setTimeout(() => {
+  console.log("Timeout executed after 3 seconds");
+}, 3000);
+
+// const price = 6.4;
+// const quantity = 3;
+// const sum = price * quantity;
+// console.log(sum);
 
 // console.log(2 ** 53 - 1);
 // console.log(Number.MAX_SAFE_INTEGER);
