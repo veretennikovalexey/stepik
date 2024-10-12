@@ -1,8 +1,8 @@
 document.getElementById("button_del").addEventListener("click", function () {
-  let x = parseFloat(document.getElementById("inputX").value);
+  let xx = parseFloat(document.getElementById("inputX").value);
   let y = parseFloat(document.getElementById("inputY").value);
 
-  let result = x / y;
+  let result = xx / y;
   document.getElementById("span_del").textContent = result;
 });
 
