@@ -1,6 +1,15 @@
 "use strict";
 
-console.log(Math.random());
+const str = "string";
+console.log(typeof str); // string
+
+const number = 10;
+console.log(typeof number); // number
+
+const boolean = true;
+console.log(typeof boolean); // boolean
+
+// console.log(Math.random());
 
 // console.log(`"Hello".toUpperCase() = `);
 // console.log("Hello".toUpperCase()); // HELLO
