@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax Highlighting Example</title>
+    <!-- Подключение Highlight.js через CDN Cloudflare версии 11.10 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <h2>Пример 1</h2>
+    <pre><code class="language-javascript">
+let s = ''
+for (let i = 0; i < 10; i += 1) {
+    s += i + ' '
+}
+console.log(s)                // 0 1 2 3 4 5 6 7 8 9
+    </code></pre>
+
+    <h2>Пример 2</h2>
+    <pre><code class="language-javascript">
+let a = []
+for (let i = 0; i < 10; i += 1) {
+    a.push(i)
+}
+console.log(a.join(' '))      // 0 1 2 3 4 5 6 7 8 9
+    </code></pre>
+</body>
+</html>
