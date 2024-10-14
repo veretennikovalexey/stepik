@@ -1,12 +1,17 @@
 "use strict";
 
-console.log("Информация");
+console.log(Math.random());
 
-let myName = "alex";
+// console.log(`"Hello".toUpperCase() = `);
+// console.log("Hello".toUpperCase()); // HELLO
 
-myName = `I'm ${myName}`;
+// console.log(`"Hello".length = `);
+// console.log("Hello".length);
 
-console.log(myName);
+// console.log("Информация");
+// let myName = "alex";
+// myName = `I'm ${myName}`;
+// console.log(myName);
 
 // const timeoutId = setTimeout(() => {
 //   console.log("Timeout executed after 3 seconds");
