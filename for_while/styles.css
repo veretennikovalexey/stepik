@@ -22,7 +22,7 @@ h1 {
 }
 
 .code-block {
-    background-color: #282c34;
+    font-size: 24px;
     color: #61dafb;
     padding: 15px;
     border-radius: 5px;
@@ -32,6 +32,6 @@ h1 {
 }
 
 .language-js {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
 }
