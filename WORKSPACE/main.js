@@ -1,8 +1,16 @@
 "use strict";
 
-const timeoutId = setTimeout(() => {
-  console.log("Timeout executed after 3 seconds");
-}, 3000);
+console.log("Информация");
+
+let myName = "alex";
+
+myName = `I'm ${myName}`;
+
+console.log(myName);
+
+// const timeoutId = setTimeout(() => {
+//   console.log("Timeout executed after 3 seconds");
+// }, 3000);
 
 // const price = 6.4;
 // const quantity = 3;
