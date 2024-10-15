@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax Highlighting Example</title>
+    <!-- Подключение Highlight.js через CDN Cloudflare версии 11.10 с темой atom-one-dark -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css">
+    <style>
+        /* Увеличиваем размер шрифта в 2 раза */
+        pre code {
+            font-size: 2em;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <pre><code class="language-javascript">
+if ( true ) {
+    console.log('This message will print!'); 
+}
+
+if ( false ) {
+    console.log('The code in this block will not run.');
+} else {
+    console.log('But the code in this block will!');
+}
+    </code></pre>
+</body>
+</html>
