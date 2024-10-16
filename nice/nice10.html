@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>magic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="styles.css">    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<pre><code class="language-javascript">
+let userName = "alex";
+userName ? 
+    console.log(`Hello, ${userName}!`) :
+    console.log("Hello!");
+
+let userQuestion = "Есть ли жизнь на Марсе?";
+console.log(userQuestion);
+
+const randomNumber = Math.floor(Math.random() * 8);
+let eightBall = "";
+
+switch (randomNumber) {
+    case 0:
+    eightBall = 'It is certain';
+    break;
+    case 1:
+    eightBall = 'It is decidedly so';
+    break;
+    case 2:
+    eightBall = 'Reply hazy try again';
+    break;
+    case 3:
+    eightBall = 'Cannot predict now';
+    break;
+    case 4:
+    eightBall = 'Do not count on it';
+    break;
+    case 5:
+    eightBall = 'My sources say no';
+    break;
+    case 6:
+    eightBall = 'Outlook not so good';
+    break;
+    case 7:
+    eightBall = 'Signs point to yes';
+    break;
+    default:
+    eightBall = 'Error';
+    break;
+}
+
+console.log(`The Magic Eight Ball says: ${eightBall}`);    
+</code></pre>
+</body>
+</html>
