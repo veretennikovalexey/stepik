@@ -33,7 +33,7 @@
         document.getElementById('getTokenBtn').addEventListener('click', async () => {
             // Данные для отправки
             const requestData = {
-                apiKey: ""
+                apiKey: "${{ secrets.[APIKEY] }}"
             };
 
             try {
