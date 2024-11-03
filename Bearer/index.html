@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Получить JWT Токен</title>
+    <style>
+        /* Выравниваем кнопку по центру */
+        body, html {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Кнопка для запроса токена -->
+    <button id="getTokenBtn">Получить JWT Токен</button>
+
+    <script>
+        document.getElementById('getTokenBtn').addEventListener('click', async () => {
+            // Данные для отправки
+            const requestData = {
+                apiKey: ""
+            };
+
+            try {
+                // Выполнение POST-запроса
+                const response = await fetch('https://universal-api.1-ofd.ru/api/auth', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(requestData)
+                });
+
+                // Проверка успешности запроса
+                if (!response.ok) {
+                    throw new Error('Ошибка при получении токена');
+                }
+
+                // Обработка ответа
+                const data = await response.json();
+                console.log("JWT токен:", data.token); // Логируем токен в консоль
+                alert(`Получен JWT токен: ${data.token}`);
+            } catch (error) {
+                console.error("Ошибка:", error);
+                alert('Не удалось получить токен');
+            }
+        });
+    </script>
+</body>
+</html>
