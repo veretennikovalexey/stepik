@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch ? else :</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <pre><code class="language-javascript">
+if (isNightTime) {
+    console.log('Turn on the lights!');
+} else {
+    console.log('Turn off the lights!');
+}
+
+isNightTime ? console.log('Turn on the lights!') : 
+    console.log('Turn off the lights!');          
+
+switch (athleteFinalPosition) {
+    case 'first place':
+        console.log('You get the gold medal!');
+        break;
+    case 'second place':
+        console.log('You get the silver medal!');
+        break;
+    case 'third place':
+        console.log('You get the bronze medal!');
+        break;
+    default:
+        console.log('No medal awarded.');
+        break;    
+}    
+    </code></pre>
+</body>
+</html>

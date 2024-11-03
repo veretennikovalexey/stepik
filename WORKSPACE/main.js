@@ -1,8 +1,30 @@
 "use strict";
 
-const timeoutId = setTimeout(() => {
-  console.log("Timeout executed after 3 seconds");
-}, 3000);
+const str = "string";
+console.log(typeof str); // string
+
+const number = 10;
+console.log(typeof number); // number
+
+const boolean = true;
+console.log(typeof boolean); // boolean
+
+// console.log(Math.random());
+
+// console.log(`"Hello".toUpperCase() = `);
+// console.log("Hello".toUpperCase()); // HELLO
+
+// console.log(`"Hello".length = `);
+// console.log("Hello".length);
+
+// console.log("Информация");
+// let myName = "alex";
+// myName = `I'm ${myName}`;
+// console.log(myName);
+
+// const timeoutId = setTimeout(() => {
+//   console.log("Timeout executed after 3 seconds");
+// }, 3000);
 
 // const price = 6.4;
 // const quantity = 3;
